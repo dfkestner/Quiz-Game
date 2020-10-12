@@ -23,25 +23,25 @@ var currentScore = 0;
 var timeLeft = 120;
 
 var Questions = [
-    {title: "Q0",
-    choices: ["a0", "a1", "c", "a3"],
-    answer: "c",
+    {title: "What ancient cilization built the Machu Picchu complex in Peru?",
+    choices: ["A: The Mayans", "B: The Incas", "C: The Olmecs", "D: The Aztecs"],
+    correctAnswer: "B: The Incas",
     },
-    {title: "Q1",
-    choices: ["b0", "c", "b2", "b3"],
-    answer: "c",
+    {title: "What type of word is 'truthfully'?",
+    choices: ["A: Adverb", "B: Adjective", "C: Interjection", "D: Article"],
+    correctAnswer: "A: Adverb",
     },
-    {title: "Q2",
-    choices: ["c0", "c1", "c2", "c"],
-    answer: "c",
+    {title: "What is the longest river in the world?",
+    choices: ["A: Yangtze", "B: Mississippi", "C: Amazon", "D: Nile"],
+    correctAnswer: "D: Nile",
     },
-    {title: "Q3",
-    choices: ["c", "d1", "d2", "d3"],
-    answer: "c",
+    {title: "What planet is nicknamed the 'Red Planet'?",
+    choices: ["A: Mercury", "B: Venus", "C: Mars", "D: Jupiter"],
+    correctAnswer: "C: Mars",
     },
-    {title: "Q4",
-    choices: ["e0", "e1", "c", "e3"],
-    answer: "c",
+    {title: "The interior angles of a triangle always sum up to ____ :",
+    choices: ["A: 90 degrees", "B: 60 degrees", "C: 75 degrees", "D: 180 degrees"],
+    correctAnswer: "D: 180 degrees",
     }]
 
 var currentQuestionIndex = 0;
@@ -64,7 +64,7 @@ function getQuestion() {
 }
 
 function choiceSelect() {
-    if(this.value !== Questions[currentQuestionIndex].answer) {
+    if(this.value !== Questions[currentQuestionIndex].correctAnswer) {
         timeLeft -= 10;
         result.textContent = "Incorrect :(";
     }

@@ -6,21 +6,25 @@
     <title>Quiz Game</title>
 </head>
 <body>
-    <h1>This is a quiz!</h1>
+    <h1>Are You Smarter Than a Fourth Grader?</h1>
     <section id="main">
         <h2 id="header">
-            Click the START button to begin the quiz!
+            Take this quiz to find out!
         </h2>
-            <section id="content">
-                Welcome to the quiz! Once you click Start, you'll have 2 minutes to complete the quiz. For every incorrect answer selected, you'll lose 10 seconds from your remaining time, so choose carefully!
-                <br><br>
-                <input type="button" id="startButton" value="Start Game!">
-            </section>
-            <input type="text" placeholder="Enter Name and High Score" name="hs-text" id="hs-text">
-            <section id="timer"></section>
-            <section id="score"></section>
-            <section id="result"></section>
-            <ul><input type="button" id="highScoreButton" value="View High Scores"></ul>
+        <section id="content">
+            <ul>Click "Start Game" to begin 
+                <li>You will have 2 minutes to complete the quiz</li> 
+                <li>For every incorrect answer selected, you'll lose 10 seconds from your remaining time</li>
+                <li>For every correct answer selected, 10 point will be added to your score</li>
+            </ul>
+            <br><br>
+            <input type="button" id="startButton" value="Start Game!">
+        </section>
+        <input type="text" placeholder="Enter Name and High Score" name="hs-text" id="hs-text">
+        <section id="timer"></section>
+        <section id="score"></section>
+        <section id="result"></section>
+        <ul><input type="button" id="highScoreButton" value="View High Scores"></ul>
     </section>
     <script src="script.js"></script>
 </body>
